@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  background: #333;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.container img {
+  width: 100vw;
+  height: 100vh;
+  /* object-fit: cover; */
+}
+.signal {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  width: 15vw;
+  max-width: 100px;
+  height: auto;
+  background: #111;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #333;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#startBtn {
+  background: limegreen;
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+}
+
+#stopBtn {
+  background: crimson;
+  position: absolute;
+  top: 2vh;
+  left: 20vw;
+}
+
+.line {
+  position: absolute;
+  left: 50vw;
+  bottom: 0;
+  width: 0.2vw;
+  height: 18vh;
+  background-color: red;
+}
+
+#car {
+  position: absolute;
+  bottom: 13%;
+  left: 0;
+  transition: 0.1s;
+  width: 25vw;
+  max-width: 250px;
+}
+@media (max-width: 768px) {
+  #car {
+    width: 40vw;
+    bottom: 10%;
+  }
+
+  .signal {
+    width: 25vw;
+  }
+
+  .line {
+    left: 60vw;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

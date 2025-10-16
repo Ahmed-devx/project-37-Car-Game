@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="pixel-art-city-game-level-600nw-2515685417.webp" alt="" />
+      <div class="signal">
+        <div class="light" id="red"></div>
+        <div class="light" id="yellow"></div>
+        <div class="light" id="green"></div>
+      </div>
+
+      <div class="line"></div>
+
+      <div id="car">
+        <script
+          src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+          type="module"
+        ></script>
+        <dotlottie-wc
+          src="https://lottie.host/caabe9fa-01f3-4058-bb0e-42d82dbed2c2/xbHpuON2Ic.lottie"
+          style="width: 250px; height: 250px"
+          autoplay
+          loop
+        ></dotlottie-wc>
+      </div>
+
+      <button id="startBtn" onclick="startCar()">Start</button>
+      <button id="stopBtn" onclick="stopCar()">Stop</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
