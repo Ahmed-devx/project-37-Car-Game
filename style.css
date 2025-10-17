@@ -68,7 +68,7 @@ button {
   bottom: 0;
   width: 0.2vw;
   height: 18vh;
-  background-color: red;
+ 
 }
 
 #car {
@@ -98,3 +98,4 @@ button {
     padding: 8px 18px;
   }
 }
+
